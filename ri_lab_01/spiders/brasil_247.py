@@ -20,7 +20,7 @@ class Brasil247Spider(scrapy.Spider):
     def scrap_url(self, response):
         info = yield {
             'title': response.xpath('//*[@id="wrapper"]/div[5]/h1/text()').get(),
-            'subtitle': response.xpath('//*[@id="wrapper"]/div[5]/p[2]/text()').get(),
+            'sub_title': response.xpath('//*[@id="wrapper"]/div[5]/p[2]/text()').get(),
             'author': response.xpath('//*[@id="wrapper"]/div[6]/section[1]/div[1]/p[2]/strong/text()').get(),
             'date': response.xpath('//*[@id="wrapper"]')[0].css('p::text')[0].get(),
             'section': response.css('body::attr(id)').get().split("-")[-1],
