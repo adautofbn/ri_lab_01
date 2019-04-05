@@ -82,7 +82,7 @@ ROTATING_PROXY_LIST = [
   '187.32.123.177:3128',  '187.32.123.177:3128', '177.72.92.24:23500'
 ]
 
-#ROTATING_PROXY_LIST = ['201.86.99.130:39900']
+# ROTATING_PROXY_LIST = ['187.109.63.9:20183']
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
